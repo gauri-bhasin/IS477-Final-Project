@@ -1,33 +1,33 @@
-#### Gender Representation in Music Lyrics Over Time
+# Gender Representation in Music Lyrics Over Time
 
-# Question: Do songs by male and female artists differ in sentiment polarity and gender-related language over the past two decades?
- # Datasets:
+### Question: Do songs by male and female artists differ in sentiment polarity and gender-related language over the past two decades?
+ #### Datasets:
 Spotify API (track metadata, artists, release year)
 Lyrics dataset (Kaggle “Lyrics Genius” or Genius API)
- # Integration: 
+ #### Integration: 
  Album track + artist name
- # Enrichment: 
+ #### Enrichment: 
  NLP sentiment/gendered pronoun analysis
- # Ethics: 
+ #### Ethics: 
  Copyright/licensing for lyrics datasets
 ### Compare male vs. female artists using sentiment and gendered word frequency.
 
 ### Overview
 This project studies the representation of sentiment and gender in popular music between 2000 and 2025. Through an integration of song metadata collected from the Spotify API with lyrical data taken from the Genius Lyrics dataset, this research endeavors to analyze the intersection of gender and sentiment in modern music. Employing the branch of natural language processing (NLP) methods, this project will determine emotional tone-related trends, gendered language trends, and artist demographics during the relevant timeframe. Aims to have a clear and reproducible workflow that emphasizes linguistic and cultural shifts in how male and female artists exhibit their identities and depict gender in lyrics.
 
-### Research Question(s)
-## Primary Question:
+## Research Question(s)
+### Primary Question:
 Do songs by male and female artists differ in sentiment polarity and gender-related language over the past two decades?
-# Sub-questions:
+#### Sub-questions:
 How has lyrical sentiment (positive, negative, neutral) evolved for male vs. female artists between 2000–2025?
 Which gendered terms (e.g., “he,” “she”) appear most frequently by artist gender and year?
 Is there a noticeable shift toward more empowering or emotional expression across decades?
 ### Team
-# Role for Gauri Bhasin: 
+#### Role for Gauri Bhasin: 
 Responsible for 2 stages of the data lifecycle, including acquisition, integration, and documentation.
 
 
-# Role for Krishna Damania: 
+#### Role for Krishna Damania: 
 Responsible for 2 stages of the data lifecycle, including analysis and documentation.
 
 
@@ -49,7 +49,7 @@ Purpose: Provides structured metadata for linking and temporal analysis
 - Access Method: Kaggle download or LyricsGenius API
 - Attributes: Song title, artist name, lyrics text
 
-# Purpose: 
+### Purpose: 
 Provides unstructured text data for NLP analysis
 - Integration:
  - The datasets will be merged on album track + artist name using fuzzy matching to handle slight naming variations.
@@ -59,7 +59,7 @@ Provides unstructured text data for NLP analysis
  
 
 ### Timeline
-Phase(Done By) | Task | Module Alignment | Target Date
+##Phase(Done By) | Task | Module Alignment | Target Date
 - Week 1(Gauri) : Collect Spotify and Genius datasets | In Modules 3–4 by  Oct 17- Oct 20
 
 - Week 2(Gauri) : Clean & preprocess text (remove punctuation, normalize casing, etc.)| Module 10 by Oct 25
