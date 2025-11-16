@@ -1,0 +1,13 @@
+# Ignore large datasets
+song_lyrics.csv
+
+# Secrets
+config.py
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore environment
+.venv/
+env/
