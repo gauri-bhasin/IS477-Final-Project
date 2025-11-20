@@ -9,5 +9,5 @@ __pycache__/
 *.pyc
 
 # Ignore environment
+venv/
 .venv/
-env/
