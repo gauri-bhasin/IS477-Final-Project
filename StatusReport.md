@@ -71,12 +71,28 @@ This section follows the tasks and weeks from our original project plan.
 ---
 
 ### Week 5 – Gendered term frequencies & trends (Krishna)  
-**Status:** Not started , should complete by 20th november   
+**Status:** Completed
 
-**Planned work:**  
-- Define a lexicon of gender-related terms (pronouns and common gendered nouns).  
-- Tokenize lyrics and compute how often male-coded vs. female-coded terms appear, normalized by song length.  
-- Aggregate these counts by artist gender and year to identify trends in gendered language.
+**What we did:**  
+- Analyzing gendered term frequencies and trends using the merged lyrics dataset:
+  - Defined two dictionaries of gendered terms:
+    - Feminine terms (e.g., “she”, “her”, “woman”, “girl”, etc.)
+    - Masculine terms (e.g., “he”, “him”, “man”, “boy”, etc.)
+  - Cleaned each song’s lyrics and computed:
+    - Total word count
+    - Count of feminine terms
+    - Count of masculine terms
+    - Normalized frequencies (e.g., feminine-terms-per-1000-words).
+  - Aggregated gendered-language usage by:
+    - Artist
+    - Year
+    - Genre
+  - Generated time-series plots showing how masculine vs feminine term usage changed over time for major artists (Taylor Swift, Drake, Ariana Grande, Ed Sheeran).
+**Repository artifacts:**  
+- `gendered_language_analysis.py` – full script that performs gendered-term counting, normalization, aggregation, and plotting
+- `tracks_with_gendered_counts.csv` – track-level dataset including feminine/masculine term counts and normalized rates
+- `artist_year_gendered_summary.csv` – aggregated artist-year dataset summarizing gendered language frequencies
+- `Ariana_Grande_gendered_trend.png`, `Drake_gendered_trend.png`, `Taylor_Swift_gendered_trend.png`, `Ed_Sheeran_gendered_trend.png`– visual trendlines showing masculine vs feminine language use over time.
 
 ---
 
@@ -123,7 +139,8 @@ This section follows the tasks and weeks from our original project plan.
 | 2    | Clean & preprocess metadata and lyrics                                                 | Gauri       | **Done**      | Completed           |
 | 3    | Integrate Spotify and lyrics datasets                                                  | Gauri       | **Done**      | Completed           |
 | 4    | Run sentiment analysis and create sentiment summaries                                  | Krishna     | **Done**      | Completed           |
-| 5    | Analyze gendered term frequencies and trends                                           | Krishna     | In progress   | Target: Nov 20      |
+| 5    | Analyze gendered term frequencies and trends                                           | Krishna     | **Done**      |
+| Completed         |
 | 6    | Build automated, reproducible workflow                                                 | Krishna     | Not started   | Target: Nov 25      |
 | 7    | Final visualizations + written report                                                  | Both        | Not started   | Target: Dec 5       |
 | 8    | Final GitHub cleanup and project submission                                            | Gauri       | Not started   | Target: Dec 10      |
@@ -159,11 +176,12 @@ Overall the core research question and analytical goals remain the same, but we 
 - Cleaned and normalized song titles and artist names.  
 - Filtered and deduplicated the Genius lyrics dataset, and integrated it with Spotify metadata to create the combined `spotify_with_lyrics.csv` dataset.  
 - Helped refine the project scope and plan based on earlier milestones.
+- Provided feedback on sentiment analysis approach and results interpretation and helped with the gendered-language and timeline analyses.
 
 ### Krishna Damania – Contribution Summary  
 - Implemented the sentiment analysis stage using the merged Spotify + lyrics dataset.  
 - Designed and ran the TextBlob-based pipeline to generate track-level sentiment scores and categorical labels.  
 - Produced the `spotify_with_lyrics_and_sentiment.csv` dataset and the `artist_year_sentiment_summary.csv` summary file for later visualization.  
-- Provided input on how the sentiment results will tie into the later gendered-language and timeline analyses.
+- Completed the sentiment analysis results into gendered-language and timeline analyses.
 
 
