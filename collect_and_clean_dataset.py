@@ -4,7 +4,7 @@ import pandas as pd
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from config import CLIENT_ID, CLIENT_SECRET, REDIRECT_URI
-
+USE_SPOTIFY_API = False
 # ---------- SPOTIFY SECTION (RUN ONCE) ----------
 
 def get_spotify_tracks():
